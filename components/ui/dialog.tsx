@@ -23,6 +23,9 @@ function DialogClose({ ...props }: DialogPrimitive.Close.Props) {
   return <DialogPrimitive.Close data-slot="dialog-close" {...props} />
 }
 
+/**
+ * Backdrop overlay for the dialog with blur effect and fade animations.
+ */
 function DialogOverlay({
   className,
   ...props
@@ -39,6 +42,10 @@ function DialogOverlay({
   )
 }
 
+/**
+ * Main dialog content container with rounded styling, border, and optional close button.
+ * Renders within a portal with overlay and handles positioning and animations.
+ */
 function DialogContent({
   className,
   children,
@@ -89,6 +96,10 @@ function DialogHeader({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
+/**
+ * Footer section for dialog with optional close button and action buttons.
+ * Styled with border-top separator and responsive flex layout.
+ */
 function DialogFooter({
   className,
   showCloseButton = false,

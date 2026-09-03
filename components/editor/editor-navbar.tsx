@@ -12,6 +12,10 @@ export interface EditorNavbarProps {
   className?: string;
 }
 
+/**
+ * Top navigation bar for the editor with sidebar toggle button and branding.
+ * Displays the current sidebar state and provides controls for toggling it.
+ */
 export function EditorNavbar({
   isSidebarOpen,
   onToggleSidebar,

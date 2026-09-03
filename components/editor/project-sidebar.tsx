@@ -13,6 +13,10 @@ export interface ProjectSidebarProps {
   className?: string;
 }
 
+/**
+ * Floating sidebar panel that displays user projects and shared projects in tabbed view.
+ * Animates in/out based on isOpen prop and includes empty states for both tabs.
+ */
 export function ProjectSidebar({
   isOpen,
   onClose,

@@ -4,6 +4,10 @@ import * as React from "react";
 import { EditorNavbar } from "@/components/editor/editor-navbar";
 import { ProjectSidebar } from "@/components/editor/project-sidebar";
 
+/**
+ * Home page component that renders the main editor workspace with navbar and sidebar.
+ * Manages sidebar open/close state and provides the canvas area for system design.
+ */
 export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
 
